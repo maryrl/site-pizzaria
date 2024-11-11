@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --brand-color: #ffbd48;
+    --dark-10: #333333;
+    --dark-20: #222222;
+    --dark-30: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #fdf3e6;
+    color: var(--dark-10);
+    line-height: 1.6;
+}
+.header {
+  text-align: center;
+  background-image: url('assets/imagem1.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: 1;
+}
+
+.header h1 {
+  font-size: 4rem; 
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.header .highlight {
+  color: var(--brand-color);
+}
+
+.header .subtitle {
+  font-size: 1.8rem; 
+  margin-top: 10px;
+  font-style: italic;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.best-sellers {
+  text-align: center;
+  padding: 40px 20px;
+  background-image: url('assets/fundo2.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+}
+
+.best-sellers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.best-sellers h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.pizza-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.pizza-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pizza-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.pizza-item img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.pizza-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: var(--dark-20);
+}
+
+.pizza-item p {
+    font-size: 0.9rem;
+    color: var(--dark-10);
+}
+
+.price {
+    font-size: 1.1rem;
+    color: var(--brand-color);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+button {
+    background-color: var(--brand-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e55a00;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+    background-color: #f8efe2;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--dark-10);
+}
+
+.about p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--dark-10);
+}
+
+.highlight {
+    color: var(--brand-color);
+}
+
+.la {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.yellow {
+  color: #FFD700; 
+}
+
+.red {
+  color: #FF0000; 
+}
+
+.green {
+  color: #008000; 
+}
+
+h2{
+  color:#111111;
+}
+
+
+.header {
+  text-align: center;
+}
+
+
+.header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 3em;
+  line-height: 1; 
+}
+
+.yellow {
+  color: yellow;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+
+.mais-pedidas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.item {
+  position: relative;
+  width: 200px; 
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: red; 
+  cursor: pointer;
+}
+
+
+.heart:hover {
+  color: darkred;
+}
+
+
+.la {
+  display: block;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 0.8em; 
+  font-style: italic; 
+  margin-bottom: -10px; 
+}
